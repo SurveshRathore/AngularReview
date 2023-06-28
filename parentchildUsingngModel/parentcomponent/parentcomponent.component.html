@@ -1,0 +1,27 @@
+<!-- <form [formGroup]="parentForm"  (ngSubmit)="onSubmit()">
+    <div>
+        <p>
+            <mat-form-field appearance="outline">
+              <mat-label>Input box</mat-label>
+              <input matInput placeholder="user Input" formControlName="userValue">
+              
+            </mat-form-field>
+          </p>
+
+          <button>Submit</button>
+          
+    </div>
+</form>
+<app-childcomponent [item]="userData"></app-childcomponent> -->
+<!-- <app-childcomponent [item]="userData"></app-childcomponent> -->
+
+
+<div ng-controller="myController">
+    
+        <input type="text"[(ngModel)]="userValue">
+        <button (click)="input()">Submit</button>
+    
+      
+</div>
+
+<app-childcomponent [item]="userData"></app-childcomponent>
