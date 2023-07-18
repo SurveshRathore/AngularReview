@@ -1,0 +1,12 @@
+<p>Interpolation {{inter}}</p>
+<button disabled={{btnType}}>Click Me</button>
+
+<p>Property Binding </p>
+<button [disabled]="btnType">Click Me</button>
+
+<p>{{title}} </p>
+<button (click)="changeTitle()" [disabled]="btnType">Click Me</button>
+
+<p>Two way Data Binding using ngModel</p>
+<input type="text" [(ngModel)]="name">
+<p>Your input {{name}}</p>
