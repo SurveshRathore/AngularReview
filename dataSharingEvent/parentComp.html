@@ -1,0 +1,7 @@
+<p>parent-comp works!</p>
+<div *ngFor="let item of message">
+    ID : {{item.Id}}
+    Name : {{item.Name}}
+</div>
+
+<app-child-comp (childEvent)="receiveChildEvent($event)"></app-child-comp>
